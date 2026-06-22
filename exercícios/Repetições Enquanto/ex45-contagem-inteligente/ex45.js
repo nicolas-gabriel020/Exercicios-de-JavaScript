@@ -46,15 +46,29 @@ function contar() {
 
                     inicio_formatado += incremento_formatado
                 }
-
-                res.innerHTML += `Acabou! <br><br>
-                Total de números exibidos: ${total} <br>
-                Soma dos números exibidos: ${soma} <br>
-                Maior valor mostrado: ${maior} <br>
-                Menor valor mostrado: ${menor}`
             } else {
-                res.innerHTML = 'Por favor coloque um número inicial menor que o número final!'
+                while (inicio_formatado >= fim_formatado) {
+                    res.innerHTML += `${inicio_formatado} `
+
+                    if (inicio_formatado > maior) {
+                        maior = inicio_formatado
+                    }
+
+                    if (inicio_formatado < menor) {
+                        menor = inicio_formatado
+                    }
+
+                    total++
+                    soma += inicio_formatado
+
+                    inicio_formatado -= incremento_formatado
+                }
             }
+            res.innerHTML += `<br> Acabou! <br><br>
+            Total de números exibidos: ${total} <br>
+            Soma dos números exibidos: ${soma} <br>
+            Maior valor mostrado: ${maior} <br>
+            Menor valor mostrado: ${menor}`
         }
     }
 }
