@@ -56,8 +56,7 @@ function valores_adicionados() {
                 Menor valor digitado: ${menor} <br>
                 Quantidade de números pares: ${par} <br>
                 Quantidade de números impares: ${impar} <br>
-                Média dos números: ${media.toFixed(1)} <br>
-                C: ${c}`
+                Média dos números: ${media.toFixed(1)} <br>`
             } else {
                 return(res.innerHTML = 'Sequência finalizada!')
             }
