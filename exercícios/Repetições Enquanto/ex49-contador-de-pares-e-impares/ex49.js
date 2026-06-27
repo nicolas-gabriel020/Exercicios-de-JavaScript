@@ -15,17 +15,19 @@ function valores_adicionados() {
       
     if (valor.value == '') {
         res.innerHTML = 'Por favor preencha com todos os dados!'
+        valor.focus()
     } else {
         let numero = Number(valor.value)
-        
-        valor.value = ''
-        valor.focus()
 
         let decimal = Math.floor(numero)
 
         if (numero != decimal) {
             res.innerHTML = 'Por favor digite apenas números inteiros!'
+            valor.focus()
         } else {  
+            valor.value = ''
+            valor.focus()
+
             c++
 
             if (numero % 2 == 0) {
@@ -51,20 +53,3 @@ function valores_adicionados() {
         }
     }
 }
-
-/*c++
-
-            if (c <= 6) {
-
-                if (numero % 2 == 0) {
-                    par++
-                } else {
-                    impar++
-                }
-
-                res.innerHTML = `${c} número adicionado!`
-            } else {
-                return(res.innerHTML = `Total de números pares: ${par} <br>
-                    Total de números impares: ${impar} <br>
-                    Contador: ${c}`)
-            }*/
