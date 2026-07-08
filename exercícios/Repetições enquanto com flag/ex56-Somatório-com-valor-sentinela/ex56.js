@@ -13,8 +13,21 @@ let maior = 0
 let menor = 0
 let par = 0
 let impar = 0
+let recomecar = false
 
 function somatorio() {
+    if (recomecar) {
+        let c = 0
+        let soma = 0
+        let total = 0
+        let media = 0
+        let maior = 0
+        let menor = 0
+        let par = 0
+        let impar = 0
+        let recomecar = false
+    }
+
     res.innerHTML = `Aguardando execução... <br><br> 
     Observação: Ao digitar o número 1111 e executar a sequência se encerra`
 
@@ -60,11 +73,18 @@ function somatorio() {
 
                 posicao.innerHTML = `Digite o ${c + 1}º número`
             } else {
+                recomecar = true
+                botao.innerHTML = 'Recomeçar'
+
                 media = soma / total
+
+                if (total == 0) {
+                    media = 0
+                }
 
                 res.innerHTML = `Total de números digitados: ${c} <br>
                 Soma de todos os números: ${soma} <br>
-                Média dos números: ${media} <br><br>
+                Média dos números: ${media.toFixed(1)} <br><br>
                 Maior número digitado: ${maior} <br>
                 Menor número digitado: ${menor} <br><br>
                 Total de números pares: ${par} <br>
