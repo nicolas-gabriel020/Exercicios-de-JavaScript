@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f1f1f1;
+}
+
+.painel {
+    width: min(90%, 500px);
+
+    padding: 2rem;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    margin-bottom: 2rem;
+
+    text-align: center;
+}
+
+.contexto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.dados input {
+    padding: 0.5rem;
+
+    font-size: 1rem;
+}
+
+.controles {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    margin-top: 2rem;
+}
+
+.controles button {
+    padding: 0.7rem;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+.saida {
+    margin-top: 2rem;
+}
+
+.saida h2 {
+    margin-bottom: 1rem;
+}
+
+#res {
+    min-height: 100px;
+
+    padding: 1rem;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+}
