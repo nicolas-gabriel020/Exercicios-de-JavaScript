@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+
+    <link rel="stylesheet" href="ex85.css">
+</head>
+<body>
+
+    <main class="painel">
+
+        <header>
+            <h1>Lista específica de funcionários</h1>
+        </header>
+
+        <section class="dados">
+
+            <p id="pessoa">Digite as seguintes informações do 1 funcionário</p>
+
+            <label for="nome">
+                Nome:
+                <input type="text" id="nome">
+            </label>
+
+            <label for="salario">
+                Salario:
+                <input type="number" id="salario">
+            </label>
+
+            <label for="sexo">
+                Homem:
+                <input type="radio" name="sexo" id="homem" checked>
+                <br>
+                Mulher:
+                <input type="radio" name="sexo" id="mulher">
+            </label>
+
+        </section>
+
+        <section class="controles">
+
+            <button id="adicionar">
+                Adicionar
+            </button>
+        </section>
+
+        <section class="saida">
+
+            <h2>Resultado</h2>
+
+            <div id="res">
+                Aguardando finalização...
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="ex85.js"></script>
+
+</body>
+</html>
