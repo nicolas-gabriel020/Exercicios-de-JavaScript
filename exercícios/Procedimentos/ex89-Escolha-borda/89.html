@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+
+    <link rel="stylesheet" href="ex89.css">
+</head>
+<body>
+
+    <main class="painel">
+
+        <header>
+            <h1>Escolha sua frase e seu tipo de borda</h1>
+        </header>
+
+        <section class="dados">
+            <p>Exemplos de borda: </p>
+
+                <pre>
+<ol type="1">
+    <li>+-------=======------+</li>
+    <li>~~~~~~~~:::::::~~~~~~~</li>
+    <li><<<<<<<<------->>>>>>></li>
+</ol>
+                </pre>
+
+            <p>Exemplo final do resutado:</p>
+                <pre>
+~~~~~~~~:::::::~~~~~~~
+Portugol Studio
+Portugol Studio
+Portugol Studio
+~~~~~~~~:::::::~~~~~~~
+                </pre>
+
+            <label for="frase">
+                Digite sua frase:
+                <input type="text" id="frase">
+            </label>
+
+            <label for="num">
+                Digite o número da borda:
+                <input type="number" id="num">
+            </label>
+
+            <label for="repeticao">
+                Quantidade de repetições:
+                <input type="number" id="repeticao">
+            </label>
+            
+        </section>
+
+        <section class="controles">
+
+            <button id="executar">
+                Executar
+            </button>
+
+        </section>
+
+        <section class="saida">
+
+            <h2>Resultado</h2>
+
+            <div id="res">
+                Aguardando execução...
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="ex89.js"></script>
+
+</body>
+</html>
