@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+
+    <link rel="stylesheet" href="ex93.css">
+</head>
+<body>
+
+    <main class="painel">
+
+        <header>
+            <h1>Super contador</h1>
+        </header>
+
+        <section class="dados">
+
+            <label for="inicio">
+                Digite o número de inicio:
+                <input type="number" id="inicio">
+            </label>
+
+            <label for="fim">
+                Digite o número final:
+                <input type="number" id="fim">
+            </label>
+
+            <label for="incremento" >
+                Digite o número de incremento:
+                <input type="number" id="incremento" min="1">
+            </label>
+
+        </section>
+
+        <section class="controles">
+
+            <button id="executar">
+                Executar
+            </button>
+
+        </section>
+
+        <section class="saida">
+
+            <h2>Resultado</h2>
+
+            <div id="res">
+                Aguardando execução...
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="ex93.js"></script>
+
+</body>
+</html>
